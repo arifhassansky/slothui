@@ -16,6 +16,7 @@ body {
   margin: 0 auto;
 }
 
+/* navbar relates styles */
 #navbar {
   margin-top: 16px;
   display: flex;
@@ -76,6 +77,236 @@ body {
   cursor: pointer;
 }
 
+/* Testimonial related styles */
+.testimonials {
+  padding: 96px 0px;
+}
+.testimonial-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.testimonial-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 9999px;
+  margin-bottom: 24px;
+}
+
+.testimonial-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.testimonial-description {
+  color: #475569;
+  font-size: 18px;
+  margin-bottom: 64px;
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.testimonial-card {
+  flex: 1 calc(33.333% - 32px);
+  min-width: 280px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stars {
+  color: #facc15;
+  margin-bottom: 24px;
+}
+
+.testimonial-card p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.profile div {
+  font-size: 13px;
+}
+
+.profile strong {
+  font-weight: 700;
+}
+.profile span {
+  color: #475569;
+}
+
+/* Office related Styles */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 9999px;
+  margin-bottom: 24px;
+}
+
+.office-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #1e293b;
+}
+
+.office-description {
+  color: #475569;
+  font-size: 18px;
+  margin-bottom: 64px;
+}
+
+.offices {
+  display: flex;
+  gap: 20px;
+}
+
+.office-card {
+  flex: 1 1 calc(25% - 20px);
+  min-width: 240px;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.office-icon {
+  font-size: 24px;
+  color: #6366f1;
+  margin-bottom: 10px;
+}
+
+.office-title {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.office-address {
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* Faq Section relates styles */
+.faq-section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+  color: #1d2939;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-badge {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4f46e5;
+  background-color: #eef2ff;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.faq-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.faq-header p {
+  font-size: 18px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.faq-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #cbd5e1;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq-question h4 {
+  font-weight: 800;
+  color: #334155;
+  margin: 0;
+  flex: 1;
+}
+
+.icon {
+  color: #334155;
+  font-size: 18px;
+}
+
+.arrow {
+  color: #667085;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.active {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  margin-top: 16px;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.faq-item:not(.expanded) .faq-answer {
+  display: none;
+}
+
 /* download section styles */
 .download-section {
   background-color: #eef2ff;
@@ -107,7 +338,7 @@ body {
 
 .buttons {
   display: flex;
-  gap: 20px;
+  gap: 16px;
 }
 
 .btn {
@@ -224,6 +455,62 @@ body {
 
   .mobile-icon {
     display: block;
+  }
+
+  /* Testimonial Related Styles */
+  .testimonials {
+    padding: 16px 16px;
+  }
+
+  .testimonials-grid {
+    flex-direction: column;
+  }
+
+  .testimonial-card {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  /* office related styles */
+  .office-section {
+    padding: 0 16px;
+  }
+
+  .offices {
+    flex-direction: column;
+  }
+
+  .office-card {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  /* faq relates styles */
+  .faq-section {
+    padding: 40px 16px;
+  }
+
+  .faq-header h2 {
+    font-size: 22px;
+  }
+
+  .faq-header p {
+    font-size: 14px;
+  }
+
+  .faq-question h4 {
+    font-size: 15px;
+  }
+
+  .faq-badge {
+    font-size: 10px;
+    padding: 3px 10px;
   }
 
   /* Download Section Related Styles */
