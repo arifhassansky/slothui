@@ -1,0 +1,177 @@
+/* Google font link*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#navbar {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+#nav-logo {
+  width: 109px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.signup-button,
+.login-button {
+  padding: 12px 20px;
+  border-radius: 1234px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #cbd5e1;
+}
+
+.signup-button {
+  background-color: white;
+  color: #475569;
+}
+
+.login-button {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* navbar mobile menu icon */
+.mobile-icon {
+  display: none;
+  font-size: 24px;
+  color: #475569;
+  cursor: pointer;
+}
+
+/* Footer Relates Styles */
+.footer {
+  margin-top: 96px;
+  padding: 96px 112px;
+  background-color: #f8fafc;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 32px;
+  margin-bottom: 42px;
+}
+
+.footer-grid h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #1e293b;
+}
+
+.footer-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-grid ul li {
+  color: #475569;
+  font-weight: 500;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.footer-grid ul li:hover {
+  color: #1e40af;
+}
+
+.footer-bottom {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-scroll-top {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #cbd5e1;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* Responsive Related styles */
+@media (max-width: 768px) {
+  /* navbar Related Styels */
+  .nav-links,
+  .signup-button,
+  .login-button {
+    display: none;
+  }
+
+  .mobile-icon {
+    display: block;
+  }
+
+  /* Footer related Styles here */
+  .footer {
+    padding: 0px 0px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    margin-left: 16px;
+  }
+
+  .footer-grid ul li {
+    margin-bottom: 6px;
+  }
+
+  .footer-grid h4 {
+    margin-top: 20px;
+  }
+
+  .footer-bottom {
+    padding: 32px 0px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
