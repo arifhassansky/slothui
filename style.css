@@ -76,6 +76,75 @@ body {
   color: #475569;
   cursor: pointer;
 }
+/* Banner section related styled */
+.hero {
+  background: linear-gradient(180deg, #f7faff 0%, #9296f1 100%);
+  padding: 96px 0;
+  display: flex;
+  justify-content: center;
+}
+.hero-content {
+  text-align: center;
+}
+.hero-subtitle {
+  display: inline-block;
+  background: #e0e7ff;
+  color: #4338ca;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  margin-bottom: 24px;
+}
+.hero-content h1 {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 60px;
+  line-height: 68px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #1e293b;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #475569;
+  max-width: 800px;
+  margin: 0.5rem auto 48px;
+}
+.hero-badges {
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 4rem;
+}
+.hero-badges img {
+  display: block;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* Screenshots */
+.screenshots {
+  position: relative;
+  display: flex;
+}
+.screenshots .desktop img {
+  width: 1200px;
+  height: 633px;
+  border-radius: 1rem;
+}
+.screenshots .mobile {
+  position: absolute;
+  top: 140px;
+  right: calc((100% - 1210px) / 2 * -1);
+  width: 230px;
+  border-radius: 1rem;
+}
+.screenshots .mobile img {
+  width: 100%;
+  display: block;
+}
 
 /* Brand section related styles */
 .brand-logo-section {
@@ -87,6 +156,7 @@ body {
   grid-template-columns: repeat(6, 1fr);
   place-items: center;
 }
+
 .brand-logos-second {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -689,6 +759,109 @@ body {
 
   .mobile-icon {
     display: block;
+  }
+  /* Hero section related styles */
+  /* Banner section related styled */
+  .hero {
+    background: linear-gradient(180deg, #f7faff 0%, #9296f1 100%);
+    padding: 96px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .hero-subtitle {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #4338ca;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    margin-bottom: 24px;
+  }
+  .hero-content h1 {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 60px;
+    line-height: 68px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: #1e293b;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #475569;
+    max-width: 800px;
+    margin: 0.5rem auto 48px;
+  }
+  .hero-badges {
+    display: inline-flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  .hero-badges img {
+    display: block;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  /* Screenshots */
+  .screenshots {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  .screenshots .desktop img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+  .screenshots .mobile {
+    position: absolute;
+    top: 140px;
+    right: 10px;
+    width: 180px;
+    border-radius: 1rem;
+  }
+  .screenshots .mobile img {
+    width: 100%;
+    display: block;
+  }
+
+  /* Banner related styles here */
+  .hero {
+    padding: 60px 0;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .hero-content p {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .hero-badges img {
+    height: 36px;
+  }
+  .screenshots {
+    flex-direction: column;
+  }
+
+  .screenshots .mobile {
+    margin-top: -4rem;
+    margin-right: 5rem;
+    width: 20%;
   }
 
   /* Brand logos related styles */
