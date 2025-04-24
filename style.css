@@ -76,6 +76,7 @@ body {
   color: #475569;
   cursor: pointer;
 }
+
 /* Banner section related styled */
 .hero {
   background: linear-gradient(180deg, #f7faff 0%, #9296f1 100%);
@@ -155,6 +156,7 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   place-items: center;
+  margin: 16px;
 }
 
 .brand-logos-second {
@@ -162,6 +164,7 @@ body {
   grid-template-columns: repeat(5, 1fr);
   place-items: center;
   padding: 0 100px;
+  margin: 16px;
 }
 
 .brand-img {
@@ -761,7 +764,6 @@ body {
     display: block;
   }
   /* Hero section related styles */
-  /* Banner section related styled */
   .hero {
     background: linear-gradient(180deg, #f7faff 0%, #9296f1 100%);
     padding: 96px 0;
@@ -811,6 +813,10 @@ body {
     display: block;
     height: 48px;
     object-fit: contain;
+  }
+  .brand-img {
+    width: 124px;
+    height: 86px;
   }
 
   /* Screenshots */
@@ -870,7 +876,7 @@ body {
   }
   .brand-logos-second {
     grid-template-columns: repeat(3, 1fr);
-    padding: 0 16px;
+    padding: 0 0px;
   }
 
   /* features section related styles */
