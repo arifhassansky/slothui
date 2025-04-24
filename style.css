@@ -77,6 +77,92 @@ body {
   cursor: pointer;
 }
 
+/* Brand section related styles */
+.brand-logo-section {
+  margin-top: 96px;
+}
+
+.brand-logos-first {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+}
+.brand-logos-second {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  padding: 0 100px;
+}
+
+.brand-img {
+  width: 144px;
+  height: 96px;
+}
+
+/* features section relates styles */
+.features-section {
+  padding-top: 96px;
+  margin-bottom: 96px;
+  text-align: center;
+  background: #fff;
+}
+
+.highlighted-tag {
+  display: inline-block;
+  font-size: 14px;
+  color: #4f46e5;
+  background-color: #eef2ff;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.features-title {
+  font-size: 34px;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 24px;
+}
+
+.features-subtitle {
+  max-width: 800px;
+  margin: 0 auto 64px;
+  color: #475569;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 24px;
+  margin-top: 40px;
+}
+
+.feature-item {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.feature-item .icon {
+  font-size: 36px;
+  color: #4f46e5;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.feature-item p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
 /* Lazy stats relted styles */
 .lazy-stats {
   background: #f8fafc;
@@ -95,22 +181,22 @@ body {
   background-color: #eef2ff;
   color: #4f46e5;
   font-size: 20px;
-  padding: 12px;
+  padding: 14px;
   border-radius: 9999px;
 }
 
 .lazy-title {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 800;
   color: #1e293b;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .lazy-description {
-  max-width: 600px;
-  margin: 0 auto 40px;
-  color: #64748b;
-  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto 64px;
+  color: #475569;
+  font-size: 20px;
   line-height: 1.6;
 }
 
@@ -123,15 +209,16 @@ body {
 }
 
 .stat h3 {
-  font-size: 32px;
+  font-size: 60px;
   color: #4f46e5;
-  font-weight: 800;
-  margin-bottom: 4px;
+  font-weight: 700;
+  margin-bottom: 16px;
 }
 
 .stat p {
   color: #64748b;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .divider {
@@ -602,6 +689,20 @@ body {
 
   .mobile-icon {
     display: block;
+  }
+
+  /* Brand logos related styles */
+  .brand-logos-first {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .brand-logos-second {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 16px;
+  }
+
+  /* features section related styles */
+  .features-grid {
+    grid-template-columns: 1fr;
   }
 
   /* lazy stats related styles here */
